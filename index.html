@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Cricket</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                'Berkshire': ['Berkshire Swash', 'cursive'],
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="bg-cover h-96 grid place-content-center bg-[url('./img/cover.jpg')]">
+        <div class="w-full h-96 absolute bg-black opacity-80"></div>
+        <div class="w-[65ch] z-20">
+            <h1 class="font-Berkshire text-5xl font-bold text-center text-orange-600 mb-5">Select Your Best Cricketer</h1>
+            <p class="text-white text-center">The nation has given us a lot to feel proud of. The great sacrifice to
+                preserve our mother language in '52, the victory of our motherland in ‘71, the millions of garment
+                workers and thousands of entrepreneurs that made Bangladesh second largest clothing exporter.</p>
+        </div>
+    </header>
+</body>
+
+</html>
