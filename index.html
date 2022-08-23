@@ -134,28 +134,34 @@
 
                             </ol>    
                         </div>
-                        <div class="bg-black flex flex-col h-96 p-3">
-                            <h3 class="text-2xl font-semibold text-center text-white py-6">Budget</h3>
-                            <div class="flex gap-2 justify-between">
+                        <div class="bg-black flex flex-col gap-5 h-auto py-4 px-3">
+                            <h3 class="text-2xl font-semibold text-center text-white py-2">Budget</h3>
+                            <div class="flex justify-between">
                                 <p class="text-gray-400">Per Player</p>
-                                <input class="bg-black text-white border border-white w-6/12 px-1" type="text">
+                                <input id="player-price" class="bg-black text-white border border-white w-6/12 px-1" type="text">
                             </div>
-                            <button
-                                class="bg-blue-600 hover:bg-blue-700 text-white py-2 font-semibold my-5">SELECT</button>
+                            <button id="btn-calculate"
+                                class="bg-blue-600 hover:bg-blue-700 text-white py-2 font-semibold">Calculate</button>
 
-                            <p class="text-gray-400 my-3">Player Expenses <span class="ml-3 text-white">$00</span>
-                            </p>
+                            <div class="flex">
+                            <p class="text-gray-400">Player Expenses </p>
+                            <div class="ml-5 text-white">$<span id="player-expenses">00</span></div>
+                            </div>
 
-                            <div class="flex gap-2 justify-between mb-3">
+                            <div class="flex justify-between">
                                 <p class="text-gray-400">Manager</p>
                                 <input class="bg-black text-white border border-white w-6/12 px-1" type="text">
                             </div>
-                            <div class="flex gap-2 justify-between">
+                            <div class="flex justify-between">
                                 <p class="text-gray-400">Coach</p>
                                 <input class="bg-black text-white border border-white w-6/12 px-1" type="text">
                             </div>
                             <button
-                                class="bg-blue-600 hover:bg-blue-700 text-white py-2 font-semibold my-5">SELECT</button>
+                                class="bg-blue-600 hover:bg-blue-700 text-white py-2 font-semibold">Calculate Total</button>
+                                <div class="flex justify-between pb-6">
+                                    <p class="text-gray-300">Total</p>
+                                    <div class="text-orange-600">$<span>00</span></div>
+                                </div>
                         </div>
                     </div>
                 </div>
