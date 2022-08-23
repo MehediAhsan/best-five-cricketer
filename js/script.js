@@ -39,5 +39,20 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
         return;
     }
     document.getElementById('player-expenses').innerText = playerPrice * (playersName.length);
-})
+});
+
+document.getElementById('btn-total').addEventListener('click', function(){
+    const managerCost = getInputFieldAmount('manager-cost');
+    const coachCost = getInputFieldAmount('coach-cost');
+    if(isNaN(managerCost) || isNaN(coachCost)){
+        alert('Enter a number');
+        return;
+    } 
+    else if(managerCost<0 || coachCost<0){
+        alert('Enter a positive number');
+        return;
+    }
+    const playerExpenses = document.getElementById('player-expenses').innerText;
+    document.getElementById('total').innerText = managerCost + coachCost + parseFloat(playerExpenses);
+});
 
