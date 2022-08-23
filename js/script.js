@@ -30,6 +30,10 @@ function getInputFieldAmount(input){
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const playerPrice = getInputFieldAmount('player-price');
+    if(playersName.length === 0){
+        alert('Select al least one player');
+        return;
+    }
     if(isNaN(playerPrice)){
         alert('Enter a number');
         return;
